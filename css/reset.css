@@ -1,0 +1,78 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    color: #fff;
+    background-color: var(--primary-theme);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+ul,ol,p,figure{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+img{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: cover;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* thème */
+:root{
+    --primary-theme: #2b2a33;
+    --list-theme: #bdc3c7;
+    --button-theme: #222;
+    --inner-list: #fafafa;
+}
+header h1{
+    line-height: 7rem;
+    text-align: center;
+}
+.primary-collection{
+    max-width: 100rem;
+    margin: 6rem auto;
+}
+.primary-collection ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    
+}
+.primary-collection ul figure{
+    background-color: var(--inner-list);
+    color: var(--primary-theme);
+}
+.primary-collection ul figure h2{
+    font-size: x-large;
+    text-align: center;
+    background-color: var(--button-theme);
+    color: var(--inner-list);
+    margin: 0 0 1rem 0;
+    line-height: 4rem;
+}
+figure figcaption{
+    padding-bottom: .4rem;
+}
+.primary-collection ul figure p{
+    padding: 0 .4rem;
+    line-height: 3rem;
+}
+.primary-collection ul figure figcaption a{
+    display: block;
+    margin: 1rem auto;
+    width: 20rem;
+    background-color: var(--button-theme);
+}
+
+
+footer *{
+    text-align: center;
+    line-height: 5.5rem;
+}
